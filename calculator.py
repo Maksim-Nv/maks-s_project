@@ -3,17 +3,17 @@ while True:
     s = input("Знак (+,-,*,/): ")
     if s == '0': break
     if s in ('+','-','*','/'):
-        x = float(input("x="))
-        y = float(input("y="))
+        a = float(input("a="))
+        b = float(input("b="))
         if s == '+':
-            print("%.2f" % (x+y))
+            print("%.2f" % (a+b))
         elif s == '-':
-            print("%.2f" % (x-y))
+            print("%.2f" % (a-b))
         elif s == '*':
-            print("%.2f" % (x*y))
+            print("%.2f" % (a*b))
         elif s == '/':
-            if y != 0:
-                print("%.2f" % (x/y))
+            if b != 0:
+                print("%.2f" % (a/b))
             else:
                 print("Деление на ноль!")
     else:
